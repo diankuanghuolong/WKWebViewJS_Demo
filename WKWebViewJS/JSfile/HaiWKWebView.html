@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS-Demo</title>
+	<style type="text/css">
+	*{
+		font-size: 50px;
+	}
+	</style>
+</head>
+<!--<body bgcolor="#F5F5DC" background="bg.jpg">-->
+<body bgcolor="#F5F5DC">
+<h1>html 页面</h1>
+
+      <div><input type="button" value="Alert 警告" name=Submit10  style="color: orange; font-size: 50px; position:absolute;top:200px;left:100px" onclick="callJsAlert()"></div><br/>
+      <div><input type="button" value="Confirm 确认" name=Submit22  style="color: orange; font-size: 50px; position:absolute;top:350px;left:100px" onclick="callJsConfirm()"></div><br/>
+      <div><input type="button" value="Prompt 输入" name=Submit22  style=" color: orange; font-size: 50px; position:absolute;top:500px;left:100px" onclick="callJsInput()"></div><br/>
+      
+    <div id="SwiftDiv">
+      <span id="jsParamFuncSpan" name=Submit22 style="color: orange; font-size: 50px; position:absolute;top:650px;left:100px"></span>
+    </div>
+    
+    
+    <script type="text/javascript">
+      function callJsAlert() {
+        alert('Please show alert');
+    
+        window.webkit.messageHandlers.haiJSname.postMessage({body: 'Alert'});
+      }
+    
+    function callJsConfirm() {
+      if (confirm('Confirm', 'Please show confirm')) {
+        document.getElementById('jsParamFuncSpan').innerHTML
+        = 'true';
+        
+      } else {
+        document.getElementById('jsParamFuncSpan').innerHTML
+        = 'false';
+      }
+      
+      
+      window.webkit.messageHandlers.haiJSname.postMessage({body: 'Confirm'});
+    }
+    
+    function callJsInput() {
+      var response = prompt('Hello', 'Please input a Text:');
+      document.getElementById('jsParamFuncSpan').innerHTML = response;
+      
+      
+      window.webkit.messageHandlers.haiJSname.postMessage({body: response});
+      
+    }
+      </script>
+</body>
+</html>
