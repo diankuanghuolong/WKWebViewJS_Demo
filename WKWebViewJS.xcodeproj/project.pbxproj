@@ -15,6 +15,7 @@
 		B60A84A81FF1E131005C97B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A84A71FF1E131005C97B3 /* main.m */; };
 		B60A84B41FF1F664005C97B3 /* HaiWKWebView.html in Resources */ = {isa = PBXBuildFile; fileRef = B60A84B31FF1F664005C97B3 /* HaiWKWebView.html */; };
 		B60A84B81FF21B5A005C97B3 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B60A84B71FF21B5A005C97B3 /* bg.jpg */; };
+		B6CD44921FF3742F003D23BA /* WKWebView-JS.gif in Resources */ = {isa = PBXBuildFile; fileRef = B6CD44911FF3742F003D23BA /* WKWebView-JS.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B60A84A71FF1E131005C97B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B60A84B31FF1F664005C97B3 /* HaiWKWebView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = HaiWKWebView.html; sourceTree = "<group>"; };
 		B60A84B71FF21B5A005C97B3 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		B6CD44911FF3742F003D23BA /* WKWebView-JS.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "WKWebView-JS.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				B60A849B1FF1E131005C97B3 /* ViewController.h */,
 				B60A849C1FF1E131005C97B3 /* ViewController.m */,
 				B60A84B21FF1F655005C97B3 /* JSfile */,
+				B6CD44901FF3741B003D23BA /* ShowImgs */,
 				B60A849E1FF1E131005C97B3 /* Main.storyboard */,
 				B60A84A11FF1E131005C97B3 /* Assets.xcassets */,
 				B60A84A31FF1E131005C97B3 /* LaunchScreen.storyboard */,
@@ -84,6 +87,15 @@
 			);
 			path = JSfile;
 			sourceTree = "<group>";
+		};
+		B6CD44901FF3741B003D23BA /* ShowImgs */ = {
+			isa = PBXGroup;
+			children = (
+				B6CD44911FF3742F003D23BA /* WKWebView-JS.gif */,
+			);
+			name = ShowImgs;
+			path = WKWebViewJS/ShowImgs;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -144,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B60A84B81FF21B5A005C97B3 /* bg.jpg in Resources */,
+				B6CD44921FF3742F003D23BA /* WKWebView-JS.gif in Resources */,
 				B60A84A51FF1E131005C97B3 /* LaunchScreen.storyboard in Resources */,
 				B60A84B41FF1F664005C97B3 /* HaiWKWebView.html in Resources */,
 				B60A84A21FF1E131005C97B3 /* Assets.xcassets in Resources */,
