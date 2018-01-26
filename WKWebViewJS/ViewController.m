@@ -36,7 +36,7 @@
         WKWebViewConfiguration *webConfig = [WKWebViewConfiguration new];
         webConfig.userContentController = [[WKUserContentController alloc] init];
         
-        // 注入JS对象名称 @"haiJSname"，当JS通过senderModel来调用时，我们可以在WKScriptMessageHandler代理中接收到
+        // 注入JS对象名称 @"haiJSname"，当JS通过haiJSname来调用时，我们可以在WKScriptMessageHandler代理中接收到
         [webConfig.userContentController addScriptMessageHandler:self name:@"haiJSname"];
         
         _webView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:webConfig];
